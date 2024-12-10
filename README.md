@@ -130,7 +130,12 @@ THINKRAG_ENV = production
 请在包含 app.py 文件的目录中运行以下命令。
 
 ```zsh
+
 streamlit run app.py
+
+python -m streamlit run app.py
+
+
 ```
 
 系统将运行，并在浏览器上自动打开以下网址，展示应用界面。

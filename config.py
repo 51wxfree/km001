@@ -105,8 +105,8 @@ HF_ENDPOINT = "https://hf-mirror.com" # Default to be "https://huggingface.co"
 # Configure Embedding model
 DEFAULT_EMBEDDING_MODEL = "bge-small-zh-v1.5"
 EMBEDDING_MODEL_PATH = {
-    "bge-small-zh-v1.5": "BAAI/bge-small-zh-v1.5",
-    "bge-large-zh-v1.5": "BAAI/bge-large-zh-v1.5",
+    "bge-small-zh-v1.5": "quentinz/bge-small-zh-v1.5",
+    # "bge-large-zh-v1.5": "BAAI/bge-large-zh-v1.5",
 }
 
 # Configure Reranker model

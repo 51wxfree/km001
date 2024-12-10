@@ -21,19 +21,19 @@ df -h
 
 ollama list
 
-ollama pull llama3.2:1b
+# ollama pull llama3.2:1b
 ollama pull nomic-embed-text:latest
 
-# ollama pull hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:IQ2_M
+ollama pull quentinz/bge-small-zh-v1.5
 # ollama pull hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:IQ4_XS
 
-# ollama pull qwen2.5:7b
-# ollama pull llama3.1:8b
+# ollama pull hf.co/BAAI/bge-small-zh-v1.5
+# ollama pull hf.co/BAAI/bge-reranker-base
 
 # ollama pull qwen2.5:3b
 # ollama pull llama3.2:3b
 
-# ollama pull qwen2.5:1.5b
+ollama pull qwen2.5:0.5b
 # ollama pull llama3.2:1b
 # ollama pull nomic-embed-text:latest
 
