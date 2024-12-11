@@ -9,8 +9,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 export OLLAMA_HOST=0.0.0.0
 export OLLAMA_ORIGINS=*
 
-export OLLAMA_MAX_LOADED_MODELS=2
-export OLLAMA_NUM_PARALLEL=2
+export OLLAMA_MAX_LOADED_MODELS=3
+export OLLAMA_NUM_PARALLEL=3
 export OLLAMA_KEEP_ALIVE=-1
 
 nohup ollama serve > ollama.log 2>&1 &
@@ -33,8 +33,8 @@ ollama pull quentinz/bge-small-zh-v1.5
 # ollama pull qwen2.5:3b
 # ollama pull llama3.2:3b
 
-ollama pull qwen2.5:0.5b
-# ollama pull llama3.2:1b
+# ollama pull qwen2.5:0.5b
+ollama pull llama3.2:1b
 # ollama pull nomic-embed-text:latest
 
 # ollama pull gemma2:9b

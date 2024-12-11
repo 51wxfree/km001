@@ -106,6 +106,16 @@ def main():
                    )
         if st.session_state.index_manager is not None:
             if st.session_state.index_manager.check_index_exists():
+
+                # 获取索引列表
+                index_manager = st.session_state.index_manager  # 或者 use appropriate method if exists
+
+                obj = index_manager
+                print("=========================")
+                from pprint import pprint
+                pprint(vars(index_manager))
+                print("=========================")
+
                 st.session_state.index_manager.load_index()
                 st.session_state.query_engine = create_query_engine(
                     index=st.session_state.index_manager.index, 
