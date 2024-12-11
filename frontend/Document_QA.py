@@ -85,7 +85,8 @@ def chatbox():
                                 continue
                             page_label = node.metadata.get('page_label', 'N/A')
                             text = node.text
-                            short_text = text[:50] + "..." if len(text) > 50 else text
+                            short_text = text
+                            # short_text = text[:50] + "..." if len(text) > 50 else text
                             source_nodes.append({"Title": title, "Page": page_label, "Text": short_text, "Score": f"{score:.2f}"})
                         df = pd.DataFrame(source_nodes)
                         st.table(df)
@@ -107,14 +108,14 @@ def main():
         if st.session_state.index_manager is not None:
             if st.session_state.index_manager.check_index_exists():
 
-                # 获取索引列表
-                index_manager = st.session_state.index_manager  # 或者 use appropriate method if exists
+                # # 获取索引列表
+                # index_manager = st.session_state.index_manager  # 或者 use appropriate method if exists
 
-                obj = index_manager
-                print("=========================")
-                from pprint import pprint
-                pprint(vars(index_manager))
-                print("=========================")
+                # obj = index_manager
+                # print("=========================")
+                # from pprint import pprint
+                # pprint(vars(index_manager))
+                # print("=========================")
 
                 st.session_state.index_manager.load_index()
                 st.session_state.query_engine = create_query_engine(

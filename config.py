@@ -103,9 +103,9 @@ CHAT_STORE_KEY = "user1"
 HF_ENDPOINT = "https://hf-mirror.com" # Default to be "https://huggingface.co"
 
 # Configure Embedding model
-DEFAULT_EMBEDDING_MODEL = "quentinz/bge-small-zh-v1.5"
+DEFAULT_EMBEDDING_MODEL = "nomic-embed-text:latest"
 EMBEDDING_MODEL_PATH = {
-    "quentinz/bge-small-zh-v1.5": "quentinz/bge-small-zh-v1.5",
+    "quentinz/bge-large-zh-v1.5:latest": "quentinz/bge-large-zh-v1.5:latest",
     "nomic-embed-text:latest": "nomic-embed-text:latest",
 }
 

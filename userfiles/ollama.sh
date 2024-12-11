@@ -21,10 +21,12 @@ df -h
 
 ollama list
 
-# ollama pull llama3.2:1b
+ollama pull llama3.1:8b
 ollama pull nomic-embed-text:latest
 
 ollama pull quentinz/bge-small-zh-v1.5
+ollama pull quentinz/bge-large-zh-v1.5:latest
+
 # ollama pull hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:IQ4_XS
 
 # ollama pull hf.co/BAAI/bge-small-zh-v1.5
@@ -34,7 +36,7 @@ ollama pull quentinz/bge-small-zh-v1.5
 # ollama pull llama3.2:3b
 
 # ollama pull qwen2.5:0.5b
-ollama pull llama3.2:1b
+# ollama pull llama3.2:1b
 # ollama pull nomic-embed-text:latest
 
 # ollama pull gemma2:9b
